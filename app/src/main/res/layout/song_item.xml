@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_sixty_four"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/size_eight"
+    android:paddingRight="@dimen/size_eight"
+    android:paddingTop="@dimen/size_eight">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_sixty_four"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="@dimen/size_five">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/size_sixty_four"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/song_image"
+                android:layout_width="@dimen/size_sixty_four"
+                android:layout_height="@dimen/size_sixty_four"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+            <RelativeLayout
+                android:id="@+id/text_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/size_eight"
+                android:paddingStart="@dimen/size_eight">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/song_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        tools:text="@string/song_name"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/artist_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        tools:text="Artist"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/size_forty"
+                    android:layout_height="@dimen/size_forty"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/size_four"
+                    android:src="@drawable/ic_play" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

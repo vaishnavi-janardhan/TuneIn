@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="size_sixty_four">64dp</dimen>
+    <dimen name="size_eight">8dp</dimen>
+    <dimen name="size_five">5dp</dimen>
+    <dimen name="size_forty">40dp</dimen>
+    <dimen name="size_four">4dp</dimen>
+</resources>
